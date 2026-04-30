@@ -42,23 +42,40 @@ details[open] .arrow{transform:rotate(90deg)}
 .section-header .icon{font-size:1.3rem}
 .toefl-accent{border-color:#06b6d444;background:#06b6d408}
 .gen-accent{border-color:#a78bfa44;background:#a78bfa08}
+/* Tabs */
+.tab-bar{display:flex;gap:0;margin-bottom:26px;border-bottom:2px solid #2a2d3d}
+.tab-btn{padding:11px 24px;border:none;background:transparent;color:#8892a4;font-size:14px;font-weight:600;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;border-radius:8px 8px 0 0;transition:all .15s}
+.tab-btn:hover{color:#e2e8f0;background:#ffffff06}
+.tab-btn.active{color:#e2e8f0;border-bottom-color:#6c63ff;background:#6c63ff0a}
+.tab-pane{display:none}.tab-pane.active{display:block}
+.script-card{border-radius:12px;padding:24px;margin-bottom:22px;border:1px solid #2a2d3d}
+.script-block{background:#0d1117;border:1px solid #2a2d3d;border-radius:8px;padding:20px;font-size:14.5px;line-height:2;color:#e2e8f0;font-family:'Georgia',serif;white-space:pre-wrap;position:relative}
+.script-label{font-size:10px;color:#6b7280;font-family:sans-serif;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.script-alt{background:#1a1d27;border-left:3px solid #6c63ff44;padding:14px 16px;border-radius:0 8px 8px 0;font-size:13.5px;line-height:1.9;color:#c4cdd8;font-family:'Georgia',serif;margin-top:0;white-space:pre-wrap}
+.idea-card{background:#161b22;border:1px solid #2a2d3d;border-radius:10px;padding:18px;margin-bottom:12px}
+.idea-card.tier1{border-color:#10b98133;background:#10b98106}
+.idea-card.tier2{border-color:#f59e0b33;background:#f59e0b06}
+.idea-card.tier3{border-color:#6c63ff33;background:#6c63ff06}
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <!-- HEADER -->
-<div style="margin-bottom:28px">
+<div style="margin-bottom:20px">
   <h1>LinguaMarina — Deep Marketing Analytics</h1>
-  <div style="color:#8892a4;font-size:.95rem;margin-top:4px">Jan 2025 – Apr 2026 &nbsp;·&nbsp; Looker Studio KPI data &nbsp;·&nbsp; 772 campaigns tracked &nbsp;·&nbsp; Generated 2026-04-29</div>
-  <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
-    <a href="#playbook" style="background:#6c63ff;color:#fff;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700">Executive Playbook ↓</a>
-    <a href="#toefl" style="background:#06b6d422;color:#06b6d4;border:1px solid #06b6d444;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700">TOEFL Analysis ↓</a>
-    <a href="#general" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa44;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700">General English ↓</a>
-    <a href="#timing" style="background:#f59e0b22;color:#f59e0b;border:1px solid #f59e0b44;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700">Timing Analysis ↓</a>
-    <a href="#structure" style="background:#10b98122;color:#10b981;border:1px solid #10b98133;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:700">Integration Structure ↓</a>
-  </div>
+  <div style="color:#8892a4;font-size:.95rem;margin-top:4px">Jan 2025 – Apr 2026 &nbsp;·&nbsp; Looker Studio KPI data &nbsp;·&nbsp; 772 campaigns tracked &nbsp;·&nbsp; Generated 2026-04-30</div>
 </div>
+
+<!-- TAB BAR -->
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="switchTab('analytics',this)">📊 Analytics Report</button>
+  <button class="tab-btn" onclick="switchTab('scripts',this)">🎤 Ad Integration Scripts</button>
+  <button class="tab-btn" onclick="switchTab('strategy',this)">🎬 Content Strategy</button>
+</div>
+
+<!-- ═══ TAB 1: ANALYTICS ════════════════════════════════════════════════════ -->
+<div id="tab-analytics" class="tab-pane active">
 
 <!-- REVENUE OVERVIEW STRIP -->
 <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:22px">
@@ -1460,12 +1477,491 @@ details[open] .arrow{transform:rotate(90deg)}
   </details>
 </div>
 
+<!-- end tab-analytics -->
+</div>
+
+<!-- ═══ TAB 2: AD INTEGRATION SCRIPTS ══════════════════════════════════════ -->
+<div id="tab-scripts" class="tab-pane">
+
+<div style="margin-bottom:24px">
+  <h2 style="font-size:1.4rem;font-weight:800;margin-bottom:6px">Ad Integration Scripts</h2>
+  <div style="color:#8892a4;font-size:.95rem;margin-bottom:16px">Word-for-word copy ready to record. Each script follows the winning formula from $57,935 in revenue data: natural bridge → product intro → 2–3 specifics → social proof → promo code LINGUAMARINA ($20 off) → single CTA.</div>
+  <div class="callout blue" style="margin-bottom:0">
+    <strong>How to use:</strong> Place at 25–45% of video duration. Name it as a YouTube chapter (e.g. "About the course").
+    Speak conversationally — these are written to <em>sound natural</em>, not read like an ad.
+    Each script is ~70–90 seconds at a comfortable speaking pace.
+  </div>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!-- COURSE 1: Elementary to Intermediate -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<div class="script-card" style="border-color:#06b6d433;background:#06b6d406">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:16px">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:#06b6d4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Course 1 — Never promoted before</div>
+      <div style="font-size:1.2rem;font-weight:800;margin-bottom:4px">From Elementary to Intermediate</div>
+      <div style="font-size:13px;color:#8892a4">linguatrip.com/en/online/english/courses/elementary-to-intermediate/ &nbsp;·&nbsp; from $108 &nbsp;·&nbsp; 7 weeks</div>
+    </div>
+    <div style="text-align:right;flex-shrink:0">
+      <div style="font-size:12px;color:#8892a4;margin-bottom:4px">Best fit videos</div>
+      <div style="font-size:12px;color:#06b6d4">Basic grammar · "Why is my English stuck?" · A1–A2 content</div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:16px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Version A — for grammar videos (natural bridge)</div>
+    <div class="script-block">By the way — if you feel like your English has been stuck for a while, like you know the basics but you keep making the same mistakes and you're not actually moving forward, I want to tell you about a course we put together specifically for this stage.
+
+It's called <strong>From Elementary to Intermediate</strong>, and it's a 7-week program — 30 lessons, a new one every other day, so it never feels overwhelming. Each lesson builds on the last. You're not just memorizing rules — you're practicing how to actually use them in real sentences.
+
+We also have live Q&A sessions built in. So if something doesn't click, you ask — and you get an answer. Over 10,000 students have already gone through this course.
+
+Use promo code <strong>LINGUAMARINA</strong> to get $20 off. The link is in the description.</div>
+  </div>
+
+  <div style="margin-bottom:16px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Version B — for "common mistakes" or beginner vocabulary videos</div>
+    <div class="script-alt">By the way, mistakes like this are exactly why we built the <strong>Elementary to Intermediate</strong> course. Most learners at this level know the rules — they just haven't practiced using them enough for it to become automatic.
+
+The course is 7 weeks, 30 lessons, and it's designed so you're speaking and writing from day one — not just watching.
+
+We have a live Q&A every week, lecture notes, and homework. And more than 10,000 students have gone through it already.
+
+Promo code <strong>LINGUAMARINA</strong> gets you $20 off. Link in the description.</div>
+  </div>
+
+  <div style="margin-bottom:8px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Integration elements</div>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Natural bridge</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Course structure (7 weeks / 30 lessons)</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Social proof (10,000+ students)</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Live Q&amp;A feature</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Promo code LINGUAMARINA</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Single CTA</span>
+  </div>
+  <div class="callout blue" style="margin-top:12px;font-size:13px">
+    <strong>Why this hasn't been promoted yet is an opportunity.</strong> The grammar/beginner segment gets enormous traffic (prepositions video: 15,875 sessions).
+    Even at a 0.3% conversion rate, a well-placed E2I integration in a high-traffic grammar video = 47+ sales.
+    This is the biggest untapped combination in the channel right now.
+  </div>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!-- COURSE 2: Intermediate to Advanced -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<div class="script-card" style="border-color:#a78bfa33;background:#a78bfa06">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:16px">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:#a78bfa;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Course 2 — Top performer ($3,599 from one campaign)</div>
+      <div style="font-size:1.2rem;font-weight:800;margin-bottom:4px">From Intermediate to Advanced</div>
+      <div style="font-size:13px;color:#8892a4">online.linguatrip.com/i2a-en &nbsp;·&nbsp; from $108 &nbsp;·&nbsp; 7 weeks, 35 lessons</div>
+    </div>
+    <div style="text-align:right;flex-shrink:0">
+      <div style="font-size:12px;color:#8892a4;margin-bottom:4px">Best fit videos</div>
+      <div style="font-size:12px;color:#a78bfa">Grammar · Vocabulary · Fluency · Speaking tips · "Why am I stuck at intermediate?"</div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:16px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Version A — for grammar or vocabulary videos (the "stuck at intermediate" angle)</div>
+    <div class="script-block">By the way — a lot of people watching this channel have been at intermediate level for years. And honestly? That's one of the most frustrating places to be, because you understand almost everything — but when you try to speak or write, it doesn't come out the way you want.
+
+That's exactly what we built the <strong>Intermediate to Advanced</strong> course for.
+
+It's 7 weeks, 35 video lessons. Each week focuses on one layer of language — grammar, vocabulary, reading, writing, and how to actually think in English. And every single week, you also get a <strong>live speaking session with a native American speaker</strong>. Not just watching videos — you're actually using the language.
+
+Venya, one of the instructors, teaches at a US college. Marina has 11 million subscribers on YouTube. They built this course together.
+
+Use promo code <strong>LINGUAMARINA</strong> for $20 off any plan. Link is in the description.</div>
+  </div>
+
+  <div style="margin-bottom:16px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Version B — for speaking or fluency videos (shorter, action-oriented)</div>
+    <div class="script-alt">By the way, if you're serious about finally getting past intermediate, I want to mention the <strong>Intermediate to Advanced</strong> course.
+
+It's 7 weeks. You get 35 lessons — grammar, vocabulary, speaking, writing — plus a <strong>live session with a native American speaker every week</strong>. That last part is what most online courses skip. And it's the part that actually moves the needle.
+
+The course also comes with a mobile app, a speaking buddy matching system, and a Telegram community. So you're never studying alone.
+
+Promo code <strong>LINGUAMARINA</strong> gets you $20 off. Link in the description.</div>
+  </div>
+
+  <div style="margin-bottom:16px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Version C — personal story angle (for "how I improved my English" type videos)</div>
+    <div class="script-alt">By the way, I want to tell you about something that I think is the most structured way to go from intermediate to actually fluent.
+
+It's a 7-week course called <strong>Intermediate to Advanced</strong>. I've seen hundreds of students go through it — the ones who finish it describe the same thing: they stop translating in their head, and they start actually thinking in English.
+
+What makes it different: every week you get a live speaking practice with a native American speaker. Not a recording. A real session.
+
+7 weeks, 35 lessons, speaking practice, community, mobile app. Promo code <strong>LINGUAMARINA</strong> for $20 off. Link in the description.</div>
+  </div>
+
+  <div style="margin-bottom:8px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Integration elements</div>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ "Stuck at intermediate" emotional hook</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ 7 weeks / 35 lessons structure</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Live native speaker sessions (unique feature)</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Instructor credentials (college / 11M YT)</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Promo code LINGUAMARINA</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Community + app mentioned</span>
+  </div>
+  <div class="callout green" style="margin-top:12px;font-size:13px">
+    <strong>Proven: $3,599 from a single i2a campaign.</strong> The week-by-week structure pitch converts.
+    Version A works best for grammar videos. Version C works best for personal story or "my English journey" videos.
+    The <strong>native speaker live sessions</strong> are the strongest differentiator — always mention it.
+  </div>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!-- COURSE 3: Speaking Club Pro -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<div class="script-card" style="border-color:#10b98133;background:#10b98106">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:16px">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:#10b981;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Course 3 — Subscription model, never seriously promoted</div>
+      <div style="font-size:1.2rem;font-weight:800;margin-bottom:4px">Speaking Club Pro</div>
+      <div style="font-size:13px;color:#8892a4">linguatrip.com/en/online/english/courses/speaking_club_pro/ &nbsp;·&nbsp; $55/month &nbsp;·&nbsp; Weekly Zoom sessions</div>
+    </div>
+    <div style="text-align:right;flex-shrink:0">
+      <div style="font-size:12px;color:#8892a4;margin-bottom:4px">Best fit videos</div>
+      <div style="font-size:12px;color:#10b981">Speaking tips · "How to practice English" · Conversation · "Why can't I speak?"</div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:16px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Version A — for speaking tips or conversation videos (main script)</div>
+    <div class="script-block">By the way — I want to mention something for those of you who feel like your English is fine when you're watching videos or reading, but the moment you actually have to speak, something just... freezes.
+
+The fix for that is simple, but it requires you to do one specific thing: speak more. Not study about speaking — actually speak, with other people, in English.
+
+We have something for exactly this. It's called <strong>Speaking Club Pro</strong> — and it's a weekly Zoom session where you join a group of English learners, get a topic, and just talk.
+
+No pressure. No test. No grade. You pick the sessions that work for your schedule — there's a regular conversation format, a public speaking track, and even a TOEFL-style discussion session.
+
+It's <strong>$55 a month</strong>. That's less than the price of two private lessons — but you get sessions every single week, plus a Telegram community of learners you can actually talk to between sessions.
+
+Use promo code <strong>LINGUAMARINA</strong> for $20 off your first month. Link in the description.</div>
+  </div>
+
+  <div style="margin-bottom:16px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Version B — shorter, for any general English video</div>
+    <div class="script-alt">By the way, if you want to actually practice speaking — not just study it — I want to tell you about <strong>Speaking Club Pro</strong>.
+
+Every week, you join a Zoom session with other English learners. You get a topic, you talk. Different formats: casual conversation, public speaking, even TOEFL prep discussion. You pick what fits.
+
+It's $55 a month — less than two private lessons — and you get a session every week plus a whole community in Telegram.
+
+Promo code <strong>LINGUAMARINA</strong> gets you $20 off your first month. Link is in the description.</div>
+  </div>
+
+  <div style="margin-bottom:16px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Version C — for TOEFL speaking videos (connect TOEFL practice angle)</div>
+    <div class="script-alt">By the way, the best TOEFL speaking prep isn't just watching templates — it's actually doing timed practice out loud, with feedback.
+
+We have a <strong>Speaking Club Pro</strong> that runs weekly Zoom sessions, and one of the formats is specifically TOEFL-style — you get a prompt, you answer, you hear how others approach it too.
+
+It's $55 a month, which covers weekly sessions plus a community in Telegram. And use promo code <strong>LINGUAMARINA</strong> for $20 off your first month. Link in the description.</div>
+  </div>
+
+  <div style="margin-bottom:8px">
+    <div style="font-size:11px;font-weight:700;color:#8892a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Integration elements</div>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ "Speaking freezes" emotional hook</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Price anchor ($55 = less than 2 lessons)</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ 3 session formats explained</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Community (Telegram)</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ No pressure / flexible framing</span>
+    <span class="element-pill" style="color:#10b981;border-color:#10b98133">✓ Promo code LINGUAMARINA</span>
+  </div>
+  <div class="callout amber" style="margin-top:12px;font-size:13px">
+    <strong>Subscription model = recurring revenue potential.</strong> $20 off the first month still leaves $35 for month 1, then full $55 after.
+    The speaking_050925 campaign (speaking content) converts at <strong>$2.23/session</strong> — highest non-TOEFL rate in the dataset.
+    Speaking Club Pro in a speaking video is the exact right product-audience match.
+  </div>
+</div>
+
+<!-- Quick reference card -->
+<div class="sec" style="margin-top:8px">
+  <h2 style="margin-bottom:14px">Quick Reference — Promo Code &amp; Links</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+    <div style="background:#0d1117;border:1px solid #2a2d3d;border-radius:8px;padding:16px">
+      <div style="font-size:11px;color:#06b6d4;font-weight:700;text-transform:uppercase;margin-bottom:8px">Elementary → Intermediate</div>
+      <div style="font-size:12px;color:#8892a4;margin-bottom:6px">linguatrip.com/en/online/english/courses/elementary-to-intermediate/</div>
+      <div style="font-size:13px">Promo: <strong style="color:#10b981">LINGUAMARINA</strong> = $20 off</div>
+      <div style="font-size:12px;color:#8892a4;margin-top:4px">Basic $108 → $88 · Standard $166 → $146 · Pro $242 → $222</div>
+    </div>
+    <div style="background:#0d1117;border:1px solid #2a2d3d;border-radius:8px;padding:16px">
+      <div style="font-size:11px;color:#a78bfa;font-weight:700;text-transform:uppercase;margin-bottom:8px">Intermediate → Advanced</div>
+      <div style="font-size:12px;color:#8892a4;margin-bottom:6px">online.linguatrip.com/i2a-en</div>
+      <div style="font-size:13px">Promo: <strong style="color:#10b981">LINGUAMARINA</strong> = $20 off</div>
+      <div style="font-size:12px;color:#8892a4;margin-top:4px">Basic $108 → $88 · Standard $166 → $146 · Pro $242 → $222</div>
+    </div>
+    <div style="background:#0d1117;border:1px solid #2a2d3d;border-radius:8px;padding:16px">
+      <div style="font-size:11px;color:#10b981;font-weight:700;text-transform:uppercase;margin-bottom:8px">Speaking Club Pro</div>
+      <div style="font-size:12px;color:#8892a4;margin-bottom:6px">linguatrip.com/en/online/english/courses/speaking_club_pro/</div>
+      <div style="font-size:13px">Promo: <strong style="color:#10b981">LINGUAMARINA</strong> = $20 off first month</div>
+      <div style="font-size:12px;color:#8892a4;margin-top:4px">$55/month → $35 first month</div>
+    </div>
+  </div>
+</div>
+
+<!-- end tab-scripts -->
+</div>
+
+<!-- ═══ TAB 3: CONTENT STRATEGY ════════════════════════════════════════════ -->
+<div id="tab-strategy" class="tab-pane">
+
+<div style="margin-bottom:24px">
+  <h2 style="font-size:1.4rem;font-weight:800;margin-bottom:6px">Content Strategy — What to Film Next</h2>
+  <div style="color:#8892a4;font-size:.95rem">Based on $57,935 in product revenue across 133 campaigns. Topics ranked by revenue efficiency (rev per session), volume potential, and product-audience fit.</div>
+</div>
+
+<!-- Topic performance table -->
+<div class="sec" style="margin-bottom:22px">
+  <h2 style="margin-bottom:14px">General English Topic Performance</h2>
+  <div class="callout amber" style="margin-bottom:14px">Revenue/session is the cleanest metric — it normalizes for traffic volume and shows which <em>type</em> of audience actually buys.</div>
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr>
+        <th>Topic</th>
+        <th style="text-align:center">Sessions</th>
+        <th style="text-align:right">Revenue</th>
+        <th style="text-align:center">Sold</th>
+        <th style="text-align:right">Avg check</th>
+        <th style="text-align:right">Rev / session</th>
+        <th>Verdict</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><strong>Business English</strong></td><td style="text-align:center">154</td><td style="text-align:right;color:#10b981">$152.95</td><td style="text-align:center">2</td><td style="text-align:right">$76.47</td><td style="text-align:right;font-weight:700;color:#10b981">$0.99</td><td style="color:#10b981">🔥 Highest efficiency. Tiny sample — massively underexplored.</td></tr>
+        <tr><td><strong>I2A / Advanced course</strong></td><td style="text-align:center">6,712</td><td style="text-align:right;color:#10b981">$4,182.54</td><td style="text-align:center">64</td><td style="text-align:right">$65.35</td><td style="text-align:right;font-weight:700;color:#10b981">$0.62</td><td style="color:#10b981">✅ Proven. More content in this niche = more revenue.</td></tr>
+        <tr><td><strong>Speaking</strong></td><td style="text-align:center">2,965</td><td style="text-align:right;color:#10b981">$1,565.01</td><td style="text-align:center">20</td><td style="text-align:right">$78.25</td><td style="text-align:right;font-weight:700;color:#10b981">$0.53</td><td style="color:#10b981">✅ High avg check. speaking_050925 = $2.23/session peak.</td></tr>
+        <tr><td><strong>Grammar</strong></td><td style="text-align:center">24,352</td><td style="text-align:right;color:#a5b4fc">$7,157.07</td><td style="text-align:center">664</td><td style="text-align:right">$10.78</td><td style="text-align:right;font-weight:700;color:#a5b4fc">$0.29</td><td style="color:#a5b4fc">📦 Volume engine. Low avg check but massive traffic. Upsell opportunity.</td></tr>
+        <tr><td><strong>Vocabulary &amp; Phrases</strong></td><td style="text-align:center">7,438</td><td style="text-align:right;color:#a5b4fc">$1,374.61</td><td style="text-align:center">59</td><td style="text-align:right">$23.30</td><td style="text-align:right;font-weight:700;color:#a5b4fc">$0.19</td><td style="color:#a5b4fc">📦 Solid. Word list videos reliably convert. More volume needed.</td></tr>
+        <tr><td>Fluency / Compilation</td><td style="text-align:center">9,720</td><td style="text-align:right;color:#8892a4">$944.88</td><td style="text-align:center">55</td><td style="text-align:right">$17.18</td><td style="text-align:right;color:#8892a4">$0.10</td><td style="color:#8892a4">⚠ Low efficiency. Compilations lose viewers before the pitch.</td></tr>
+        <tr><td>Study Plans</td><td style="text-align:center">4,362</td><td style="text-align:right;color:#8892a4">$318.47</td><td style="text-align:center">14</td><td style="text-align:right">$22.75</td><td style="text-align:right;color:#8892a4">$0.07</td><td style="color:#8892a4">⚠ Study plan content alone doesn't convert. Needs strong product tie-in.</td></tr>
+        <tr><td>Accent &amp; Pronunciation</td><td style="text-align:center">31</td><td style="text-align:right;color:#ef4444">$0</td><td style="text-align:center">0</td><td style="text-align:right">—</td><td style="text-align:right;color:#ef4444">$0</td><td style="color:#ef4444">✗ No product fit currently. Skip or build a product for it.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- TIER 1 IDEAS -->
+<div style="margin-bottom:8px">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+    <div style="background:#10b981;color:#000;font-weight:800;font-size:12px;padding:4px 12px;border-radius:99px">TIER 1 — Film these first</div>
+    <div style="color:#8892a4;font-size:13px">Proven audience + right product match + high revenue/session potential</div>
+  </div>
+
+  <div class="idea-card tier1">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:3px">"Why is my English stuck at elementary?" / "How to finally break out of beginner level"</div>
+        <div style="font-size:12px;color:#8892a4">Grammar-adjacent · Personal story format · A1–A2 audience</div>
+      </div>
+      <div style="flex-shrink:0"><span style="background:#06b6d422;color:#06b6d4;border:1px solid #06b6d444;border-radius:99px;padding:4px 12px;font-size:11px;font-weight:700">→ Elementary to Intermediate</span></div>
+    </div>
+    <div style="font-size:13px;color:#c4cdd8;line-height:1.7;margin-bottom:10px">
+      <strong>Why:</strong> Massive untapped gap — the E2I course has never been promoted. Grammar videos already drive 24,000+ sessions/year. A video specifically targeting the "stuck at elementary" frustration addresses the emotional state of exactly the people who would buy this course.<br><br>
+      <strong>Angle options:</strong><br>
+      · "I was stuck at elementary for 3 years — here's what actually worked" (personal story)<br>
+      · "5 signs you're ready to move from elementary to intermediate" (diagnostic)<br>
+      · "Why your grammar is improving but you still can't speak" (problem framing)<br><br>
+      <strong>Integration placement:</strong> After demonstrating the problem → pitch E2I as "the structured path" at ~30%.<br>
+      <strong>Expected:</strong> Even 0.3% conversion on 3,000 sessions = 9 sales × $88 = $792 minimum from one video.
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <span style="background:#06b6d411;color:#06b6d4;border:1px solid #06b6d433;border-radius:6px;padding:3px 10px;font-size:11px">Never promoted</span>
+      <span style="background:#10b98111;color:#10b981;border:1px solid #10b98133;border-radius:6px;padding:3px 10px;font-size:11px">High search intent</span>
+      <span style="background:#10b98111;color:#10b981;border:1px solid #10b98133;border-radius:6px;padding:3px 10px;font-size:11px">Emotional hook</span>
+    </div>
+  </div>
+
+  <div class="idea-card tier1">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:3px">"I've been intermediate for 5 years — here's what finally worked" / "Why intermediate is the hardest level"</div>
+        <div style="font-size:12px;color:#8892a4">Personal story · I2A audience · High emotional resonance</div>
+      </div>
+      <div style="flex-shrink:0"><span style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa44;border-radius:99px;padding:4px 12px;font-size:11px;font-weight:700">→ Intermediate to Advanced</span></div>
+    </div>
+    <div style="font-size:13px;color:#c4cdd8;line-height:1.7;margin-bottom:10px">
+      <strong>Why:</strong> The i2a_110424 campaign is already the #3 revenue campaign at $3,599. The "stuck at intermediate" emotional hook is proven — it's the exact framing used in the winning i2a scripts. A personal story video would outperform a generic course pitch.<br><br>
+      <strong>Angle options:</strong><br>
+      · "The moment my English finally clicked — what changed" (transformation story)<br>
+      · "Why intermediate English feels like a plateau — and exactly how to break it" (educational)<br>
+      · "Test yourself: are you actually intermediate or advanced?" (quiz format)<br><br>
+      <strong>Integration placement:</strong> After the "breakthrough moment" story → pitch i2a as the structured shortcut at ~35%.<br>
+      <strong>Expected:</strong> At speaking_050925's rate of $2.23/session and 3,000 sessions = $6,690. Conservative at $0.62/session = $1,860.
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <span style="background:#a78bfa11;color:#a78bfa;border:1px solid #a78bfa33;border-radius:6px;padding:3px 10px;font-size:11px">Proven product</span>
+      <span style="background:#10b98111;color:#10b981;border:1px solid #10b98133;border-radius:6px;padding:3px 10px;font-size:11px">Personal story = high trust</span>
+      <span style="background:#10b98111;color:#10b981;border:1px solid #10b98133;border-radius:6px;padding:3px 10px;font-size:11px">High intent audience</span>
+    </div>
+  </div>
+
+  <div class="idea-card tier1">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:3px">"Why you can't speak English even though you understand everything" / "The real reason your English speaking doesn't improve"</div>
+        <div style="font-size:12px;color:#8892a4">Speaking · Problem diagnosis format · B1–B2 audience</div>
+      </div>
+      <div style="flex-shrink:0"><span style="background:#10b98122;color:#10b981;border:1px solid #10b98133;border-radius:99px;padding:4px 12px;font-size:11px;font-weight:700">→ Speaking Club Pro</span></div>
+    </div>
+    <div style="font-size:13px;color:#c4cdd8;line-height:1.7;margin-bottom:10px">
+      <strong>Why:</strong> Speaking_050925 converts at $2.23/session — the highest non-TOEFL rate. The "I understand but can't speak" frustration is universally felt by intermediate learners. Speaking Club Pro is the perfect product: it's exactly what solves this, and the $55/month entry point has low friction.<br><br>
+      <strong>Angle options:</strong><br>
+      · "Why studying English doesn't make you fluent — what actually does" (contrarian take)<br>
+      · "I did English speaking practice every day for 30 days — here's what happened" (challenge/experiment)<br>
+      · "5 ways to practice English speaking when you have no one to practice with" (practical tips)<br><br>
+      <strong>Integration placement:</strong> After the problem diagnosis → Speaking Club Pro as the solution at ~30%.<br>
+      <strong>Conversion framing:</strong> "$55/month = less than 2 private lessons, but a session every week."
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <span style="background:#10b98111;color:#10b981;border:1px solid #10b98133;border-radius:6px;padding:3px 10px;font-size:11px">Never seriously promoted</span>
+      <span style="background:#10b98111;color:#10b981;border:1px solid #10b98133;border-radius:6px;padding:3px 10px;font-size:11px">High emotional resonance</span>
+      <span style="background:#f59e0b11;color:#f59e0b;border:1px solid #f59e0b33;border-radius:6px;padding:3px 10px;font-size:11px">Recurring revenue model</span>
+    </div>
+  </div>
+</div>
+
+<!-- TIER 2 IDEAS -->
+<div style="margin-bottom:8px;margin-top:20px">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+    <div style="background:#f59e0b;color:#000;font-weight:800;font-size:12px;padding:4px 12px;border-radius:99px">TIER 2 — High potential, needs testing</div>
+    <div style="color:#8892a4;font-size:13px">Strong product fit but no direct data yet — expected to convert well</div>
+  </div>
+
+  <div class="idea-card tier2">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px">
+      <div><div style="font-weight:700;font-size:15px;margin-bottom:3px">Business English series — "10 phrases that will get you the job in English" / "How to speak like a professional in English"</div>
+      <div style="font-size:12px;color:#8892a4">Business English · High intent · B2–C1 audience</div></div>
+      <div style="flex-shrink:0"><span style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa44;border-radius:99px;padding:4px 12px;font-size:11px;font-weight:700">→ i2a or future course</span></div>
+    </div>
+    <div style="font-size:13px;color:#c4cdd8;line-height:1.7">
+      <strong>Why:</strong> businessphases_010622 converted at <strong>$4.78/session</strong> — second highest in the entire dataset after TOEFL content. Only 32 sessions, but the conversion rate was extreme. This audience (professionals who need English for work) has high purchase intent and high willingness to pay.<br><br>
+      <strong>Topics:</strong> Job interview in English · Business email writing · How to run a meeting in English · LinkedIn English phrases · Salary negotiation in English<br><br>
+      <strong>Product fit:</strong> i2a covers business language in its later weeks. Speaking Club Pro is useful for professionals who need conversation practice. Either works.
+    </div>
+  </div>
+
+  <div class="idea-card tier2">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px">
+      <div><div style="font-weight:700;font-size:15px;margin-bottom:3px">"Grammar test: Are you actually intermediate or advanced?" (interactive quiz video)</div>
+      <div style="font-size:12px;color:#8892a4">Quiz format · All levels · High shareability</div></div>
+      <div style="flex-shrink:0"><span style="background:#06b6d422;color:#06b6d4;border:1px solid #06b6d444;border-radius:99px;padding:4px 12px;font-size:11px;font-weight:700">→ E2I or i2a (by result)</span></div>
+    </div>
+    <div style="font-size:13px;color:#c4cdd8;line-height:1.7">
+      <strong>Why:</strong> grammartest_220125 showed solid conversion at $31 avg check. Test/quiz format creates self-selection: viewers who score "elementary" are pre-qualified for E2I; viewers who score "intermediate" are pre-qualified for i2a. Two products, one video, built-in segmentation.<br><br>
+      <strong>Format:</strong> "Pause and answer" questions mid-video → score at end → product recommendation based on result. This format also drives unusually high watch time (viewers stay to see their score).
+    </div>
+  </div>
+
+  <div class="idea-card tier2">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px">
+      <div><div style="font-weight:700;font-size:15px;margin-bottom:3px">"50 English words you're probably mispronouncing" / "100 words every B2 learner needs"</div>
+      <div style="font-size:12px;color:#8892a4">Vocabulary · High search volume · Shareable</div></div>
+      <div style="flex-shrink:0"><span style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa44;border-radius:99px;padding:4px 12px;font-size:11px;font-weight:700">→ i2a or E2I</span></div>
+    </div>
+    <div style="font-size:13px;color:#c4cdd8;line-height:1.7">
+      <strong>Why:</strong> 100commonwords ($403) and 50phrases ($400) both confirmed. Vocabulary list videos reliably drive traffic. The key upgrade from the grammar book integration: pivot the product pitch toward a course instead of a $9.76 download — higher avg check per viewer.<br><br>
+      <strong>Integration framing:</strong> "These 50 words are just the start — if you want vocabulary that actually sticks in context, the i2a course dedicates a full week to advanced vocabulary in use."
+    </div>
+  </div>
+
+  <div class="idea-card tier2">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px">
+      <div><div style="font-weight:700;font-size:15px;margin-bottom:3px">"I did a 30-day English speaking challenge — here's what happened" (experiment/vlog)</div>
+      <div style="font-size:12px;color:#8892a4">Speaking · Personal experiment · Community building</div></div>
+      <div style="flex-shrink:0"><span style="background:#10b98122;color:#10b981;border:1px solid #10b98133;border-radius:99px;padding:4px 12px;font-size:11px;font-weight:700">→ Speaking Club Pro</span></div>
+    </div>
+    <div style="font-size:13px;color:#c4cdd8;line-height:1.7">
+      <strong>Why:</strong> Experiment/challenge format generates high watch time and emotional investment. Marina's personal participation = built-in credibility. Natural pivot: "I did this alone — but Speaking Club Pro gives you the community to do it together." Recurring revenue potential if viewers subscribe.
+    </div>
+  </div>
+</div>
+
+<!-- TIER 3 IDEAS -->
+<div style="margin-bottom:8px;margin-top:20px">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+    <div style="background:#6c63ff;color:#fff;font-weight:800;font-size:12px;padding:4px 12px;border-radius:99px">TIER 3 — Longer-term / experimental</div>
+    <div style="color:#8892a4;font-size:13px">Interesting signals in the data but needs more testing or a new product</div>
+  </div>
+
+  <div class="idea-card tier3">
+    <div style="font-weight:700;font-size:15px;margin-bottom:6px">"How I moved to the USA / got a job in the US with my level of English"</div>
+    <div style="font-size:13px;color:#c4cdd8;line-height:1.7">
+      <strong>Signal:</strong> usa_free converted at <strong>$818 avg check</strong> from only 5 sessions — a 40% conversion rate. This is extreme. The audience searching "USA + English" is incredibly high-intent and has high ability to pay (they're planning a major life move). If there's a premium consultation or coaching product to sell here, this content format could be one of the highest-ROI videos on the channel.
+    </div>
+  </div>
+
+  <div class="idea-card tier3">
+    <div style="font-weight:700;font-size:15px;margin-bottom:6px">"Public speaking in English — how to present confidently" / "How to give a presentation in English"</div>
+    <div style="font-size:13px;color:#c4cdd8;line-height:1.7">
+      <strong>Signal:</strong> Speaking Club Pro includes a Public Speaking format — which is a strong differentiator. Public speaking in English is searched heavily by professionals and students. No existing campaign data, but the product-audience fit is tight. Could be promoted alongside regular speaking content.
+    </div>
+  </div>
+
+  <div class="idea-card tier3">
+    <div style="font-weight:700;font-size:15px;margin-bottom:6px">Advanced English jokes / cultural references series (fluency-level content)</div>
+    <div style="font-size:13px;color:#c4cdd8;line-height:1.7">
+      <strong>Signal:</strong> 10jokes_191224 showed a $92 avg check — the highest non-speaking, non-TOEFL avg check in the dataset. The 1,042 sessions only converted 2 sales, but the avg ticket is high, suggesting this audience is advanced and willing to pay more. Worth testing with a strong i2a integration.
+    </div>
+  </div>
+</div>
+
+<!-- Summary grid -->
+<div class="sec" style="margin-top:8px">
+  <h2 style="margin-bottom:14px">Priority Summary</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+    <div style="background:#0d1117;border:1px solid #10b98133;border-radius:8px;padding:16px">
+      <div style="font-size:11px;color:#10b981;font-weight:700;text-transform:uppercase;margin-bottom:10px">Film next (Tier 1)</div>
+      <ol style="padding-left:18px;font-size:13px;line-height:2;color:#c4cdd8">
+        <li>"Why is my English stuck at elementary" → E2I course</li>
+        <li>"I've been intermediate for years" → i2a course</li>
+        <li>"Why I can't speak English" → Speaking Club Pro</li>
+      </ol>
+    </div>
+    <div style="background:#0d1117;border:1px solid #f59e0b33;border-radius:8px;padding:16px">
+      <div style="font-size:11px;color:#f59e0b;font-weight:700;text-transform:uppercase;margin-bottom:10px">Next quarter (Tier 2)</div>
+      <ol style="padding-left:18px;font-size:13px;line-height:2;color:#c4cdd8">
+        <li>Business English phrases series</li>
+        <li>Grammar test: elementary vs intermediate?</li>
+        <li>Vocabulary: 50 words / 100 words</li>
+        <li>30-day speaking challenge</li>
+      </ol>
+    </div>
+    <div style="background:#0d1117;border:1px solid #6c63ff33;border-radius:8px;padding:16px">
+      <div style="font-size:11px;color:#6c63ff;font-weight:700;text-transform:uppercase;margin-bottom:10px">Experiment (Tier 3)</div>
+      <ol style="padding-left:18px;font-size:13px;line-height:2;color:#c4cdd8">
+        <li>Moving to USA + English story</li>
+        <li>Public speaking in English</li>
+        <li>Advanced jokes / cultural references</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- end tab-strategy -->
+</div>
+
 <!-- FOOTER -->
 <div style="text-align:center;color:#4a5568;font-size:12px;padding:24px 0;border-top:1px solid #2a2d3d;margin-top:8px">
   LinguaMarina Marketing Analytics v3 &nbsp;·&nbsp; Data: Looker Studio Jan 2025 – Apr 2026 &nbsp;·&nbsp;
   Timing: YouTube Data API chapter markers + video structure analysis &nbsp;·&nbsp;
-  Generated 2026-04-29
+  Generated 2026-04-30
 </div>
+
+<script>
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
 
 </div>
 </body>
